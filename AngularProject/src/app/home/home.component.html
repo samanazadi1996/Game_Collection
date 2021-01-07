@@ -28,12 +28,16 @@
         </div>
         
         <div class="box back9" [routerLink]="['chat-room']" >
-          <img class="IconPages" src="../assets/Icons/favicon.png" >
+          <img class="IconPages" src="../assets/Icons/Games.png" >
           <span class="span" >بازی ها</span>
         </div>
         <div class="box back3"  [routerLink]="['settings']">
           <img class="IconPages" src="../assets/Icons/setting_Icon.png">
           <span class="span">تنظیمات</span>
+        </div>
+        <div class="box back8" (click)="ComingSoon()">
+          <img class="IconPages" src="../assets/Icons/Private_message.png">
+          <span class="span">چت </span>
         </div>
         <div class="box back2"  [routerLink]="['/about-us']">
           <img class="IconPages" src="../assets/Icons/About_Us_Icon.png">
@@ -42,10 +46,6 @@
         <div class="box back6" [routerLink]="['help']">
           <img class="IconPages" src="../assets/Icons/Help_Icon.png">
           <span class="span">راهنما</span>
-        </div>
-        <div class="box back8" [routerLink]="['comingsoon']">
-          <img class="IconPages" src="../assets/Icons/Private_message.png">
-          <span class="span">چت </span>
         </div>
   </div>
 </div>

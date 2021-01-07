@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import swal from 'sweetalert2';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -35,6 +35,14 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.timerEnable = true;
     }, 3000);
+  }
+  ComingSoon(){
+    swal.fire({
+      title: "به زودی",
+      text: `این ویژگی در بروزرسانی های آینده اضافه می شود`,
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: "باشه",
+    })
   }
 
 }
